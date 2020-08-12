@@ -1,0 +1,12 @@
+{
+  "name": "Idongesit",
+  "displayName": "Idongesit",
+  "expo": {
+    "name": "Idongesit",
+    "slug": "Idongesit",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
