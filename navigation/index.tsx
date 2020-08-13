@@ -6,6 +6,7 @@ import { Text } from 'react-native'
 import { black, white, orange } from '../helper/Color'
 import MovieScreen from '../screen/MovieScreen'
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack'
+import MovieDetailScreen from '../screen/MovieDetailScreen'
 
 const Drawer = createDrawerNavigator()
 const Stack = createStackNavigator();
@@ -22,6 +23,7 @@ const AppNavigator = () => {
         }}
       >
         <Stack.Screen name="Home" component={HomeDrawerNavigator} options={{ headerShown: false }} />
+        <Stack.Screen name="MovieDetail" component={MovieDetailScreen} />
       </Stack.Navigator>
     );
   };
