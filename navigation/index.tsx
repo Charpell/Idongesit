@@ -10,6 +10,7 @@ import MovieDetailScreen from '../screen/MovieDetailScreen'
 import WebViewScreen from '../screen/WebViewScreen'
 import MovieListScreen from '../screen/MovieListScreen'
 import SearchScreen from '../screen/SearchScreen'
+import TVShowScreen from '../screen/TVShowScreen'
 
 const Drawer = createDrawerNavigator()
 const Stack = createStackNavigator();
@@ -53,6 +54,13 @@ const HomeDrawerNavigator = () => {
             drawerLabel: ({ color, focused }) => CustomDrawerStyle(color, focused, "Movies"),
           }}
         />
+        <Drawer.Screen
+        name="TV Show"
+        component={TVShowScreen}
+        options={{
+          drawerLabel: ({ color, focused }) => CustomDrawerStyle(color, focused, "TV Shows"),
+        }}
+      />
       </Drawer.Navigator>
     );
   };
