@@ -14,10 +14,13 @@ export default function MovieScreen() {
     const requestMovieScreen = async () => {
         await RequestMovieApi((data) => setMoviesData(data))
     }
-
-    console.log('moviesData', moviesData)
     
     return (
-        <HomeComponent />
+        <HomeComponent 
+            type={"movie"}
+            subTitle={MovieTypes}
+            data={moviesData}
+            onRefresh={requestMovieScreen}
+        />
     )
 }
