@@ -8,6 +8,7 @@ import MovieScreen from '../screen/MovieScreen'
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack'
 import MovieDetailScreen from '../screen/MovieDetailScreen'
 import WebViewScreen from '../screen/WebViewScreen'
+import MovieListScreen from '../screen/MovieListScreen'
 
 const Drawer = createDrawerNavigator()
 const Stack = createStackNavigator();
@@ -26,6 +27,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Home" component={HomeDrawerNavigator} options={{ headerShown: false }} />
         <Stack.Screen name="MovieDetail" component={MovieDetailScreen} />
         <Stack.Screen name="Webview" component={WebViewScreen} />
+        <Stack.Screen name="Movielist" component={MovieListScreen} />
       </Stack.Navigator>
     );
   };
