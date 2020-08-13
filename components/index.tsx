@@ -12,6 +12,7 @@ import MovieCast from './MovieCast'
 import MovieImages from './MovieImages'
 import MovieRecommendations from './MovieRecommendations'
 import MoviePlayButton from './MoviePlayButton'
+import OfflineNotice from './OfflineNotice'
 
 export {
     HomeHeader,
@@ -27,5 +28,6 @@ export {
     MovieCast,
     MovieImages,
     MovieRecommendations,
-    MoviePlayButton
+    MoviePlayButton,
+    OfflineNotice
 }

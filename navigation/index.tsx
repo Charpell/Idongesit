@@ -12,6 +12,7 @@ import MovieListScreen from '../screen/MovieListScreen'
 import SearchScreen from '../screen/SearchScreen'
 import TVShowScreen from '../screen/TVShowScreen'
 import TVDetail from '../screen/TVDetailScreen'
+import OfflineNotice from '../components/OfflineNotice'
 
 const Drawer = createDrawerNavigator()
 const Stack = createStackNavigator();
@@ -87,6 +88,7 @@ export default function index() {
   return (
     <NavigationContainer>
         <AppNavigator />
+        <OfflineNotice />
     </NavigationContainer>
   );
 }
