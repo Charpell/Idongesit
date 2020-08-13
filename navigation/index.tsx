@@ -11,6 +11,7 @@ import WebViewScreen from '../screen/WebViewScreen'
 import MovieListScreen from '../screen/MovieListScreen'
 import SearchScreen from '../screen/SearchScreen'
 import TVShowScreen from '../screen/TVShowScreen'
+import TVDetail from '../screen/TVDetailScreen'
 
 const Drawer = createDrawerNavigator()
 const Stack = createStackNavigator();
@@ -31,6 +32,7 @@ const AppNavigator = () => {
         <Stack.Screen name="Webview" component={WebViewScreen} />
         <Stack.Screen name="Movielist" component={MovieListScreen} />
         <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen name="TVDetail" component={TVDetail} />
       </Stack.Navigator>
     );
   };
